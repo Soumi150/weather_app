@@ -1,0 +1,47 @@
+.App{
+  width: 100%;
+  height: 100vh;
+  background: url(images/mountain.jpg);
+  background-size: cover;
+}
+
+.cloud{
+    width: 100%;
+    height: 100%;
+    background: url(images/cloud.png);
+    animation: animate 60s linear infinite;
+}
+
+.cityInput label {
+    font-size: 1.5rem;
+}
+
+@keyframes animate 
+{
+  0%
+  {
+      background-position: 0px;
+  }
+  100%
+  {
+      background-position: 5440px;
+  }
+}
+.cityInput{
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.search{
+    border-radius: 25px;
+}
+
+.search:focus{
+    outline: none ;
+}
+
+.weather{
+background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
